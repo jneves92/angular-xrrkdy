@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Examples of Moment package
+</p>
+
+<p>Current Server UTC Time: {{ utcString | amUtc | amDateFormat: "YYYY-MM-DD HH:mm:ss Z" }}</p>
+
+<p>Current Client Local Time: {{ utcString | amUtc | amLocal | amDateFormat: "YYYY-MM-DD HH:mm:ss Z" }}</p>
+
+<p>Future Client Local Time: {{ FutureUtcString | amUtc | amLocal | amDateFormat: "YYYY-MM-DD HH:mm:ss Z" }}</p>
